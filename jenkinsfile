@@ -12,7 +12,7 @@ wrap([$class: 'Xvfb']) {
 artifactResolver artifacts: targetDirectory: '/var/lib/jenkins/jobs/cpsmockservicer5'
  
 	}
-}
+
 cleanWs()
 }
 }
