@@ -3,12 +3,11 @@ timestamps {
 
 node () {
 
-#wrap([$class: 'Xvfb']) {
+
 	stage ('mock-r5 - Checkout') {
  	 checkout([$class: 'GitSCM', branches: [[name: '*/dev']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github-creds', url: 'https://github.com/JazzCash/ACE_cpsmockservicer5.git']]]) 
 	}
 
-#}
 cleanWs()
 }
 }
